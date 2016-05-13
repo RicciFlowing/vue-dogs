@@ -1,0 +1,15 @@
+{
+  "name": "dogs",
+  "version": "0.0.0",
+  "authors": [
+    "RicciFlowing <benjamin@mathe-sellin.de>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
