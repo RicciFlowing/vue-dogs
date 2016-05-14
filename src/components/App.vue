@@ -1,6 +1,12 @@
 <template>
   <div id="app">
     <h1>{{ msg }}</h1>
+      <li v-for="dog in dogs">
+        <dog :dog="dog"> </dog>
+      </li>
+
+    </div>
+    <dog></dog>
   </div>
 </template>
 
@@ -12,7 +18,8 @@ export default {
       // with hot-reload because the reloaded component
       // preserves its current state and we are modifying
       // its initial state.
-      msg: 'Hello Vue!'
+      msg: 'Hello! Here are the dogs',
+      dogs: [{name: 'Struppi'}, {name:'Lessi'}]
     }
   }
 }
