@@ -6,7 +6,6 @@
       </li>
 
     </div>
-    <dog></dog>
   </div>
 </template>
 
