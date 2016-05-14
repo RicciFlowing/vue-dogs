@@ -2,6 +2,7 @@
   <div class="dog">
     <h3>{{ dog.name }} </h3>
     <p>Ein lieber Hund</p>
+    <img :src="dog.image" />
   </div>
 </template>
 

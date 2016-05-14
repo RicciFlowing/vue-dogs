@@ -18,7 +18,7 @@ export default {
       // preserves its current state and we are modifying
       // its initial state.
       msg: 'Hello! Here are the dogs',
-      dogs: [{name: 'Struppi'}, {name:'Lessi'}]
+      dogs: [{name: 'Struppi', image: require('../assets/dog1.jpg')}, {name:'Lessi', image:require('../assets/dog-2.jpg')}]
     }
   }
 }
