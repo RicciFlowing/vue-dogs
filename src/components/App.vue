@@ -2,9 +2,9 @@
   <div id="app">
     <h1>{{ msg }}</h1>
     <div class="container">
-      <li v-for="dog in dogs">
-        <dog :dog="dog"> </dog>
-      </li>
+      <ul>
+        <dog v-for="dog in dogs" :dog="dog"> </dog>
+      </ul>
     </div>
   </div>
 </template>
@@ -30,6 +30,9 @@ body {
 }
 h1 {
   text-align: center
+}
+ul {
+  list-style: none;
 }
 .container {
   width: 80%;

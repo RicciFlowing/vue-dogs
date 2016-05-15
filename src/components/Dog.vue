@@ -1,9 +1,9 @@
 <template>
-  <div class="dog">
+  <li class="dog">
     <h3>{{ dog.name }} </h3>
     <img :src="dog.image" />
     <p class="clearfix">Ein lieber Hund</p>
-  </div>
+  </li>
 </template>
 
 <script>
@@ -16,6 +16,7 @@ export default {
 <style scoped>
   img{
     float: left;
+    width: 200px;
   }
   .clearfix::before,
   .clearfix::after {
