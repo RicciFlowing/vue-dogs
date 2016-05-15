@@ -10,6 +10,11 @@
 </template>
 
 <script>
+var dogs = [
+  {name: 'Struppi', description: "Food truck asymmetrical portland, YOLO cliche godard green juice vice kickstarter pinterest freegan. Readymade shabby chic flexitarian bespoke DIY, pinterest banjo four loko. Tattooed blog humblebrag bespoke. Tousled banh mi cornhole readymade, meggings kombucha franzen polaroid. Pickled mlkshk ramps portland. Trust fund gentrify cold-pressed, umami single-origin coffee crucifix leggings. Kitsch bespoke echo park normcore", image: require('../assets/dog1.jpg')},
+  {name:'Lessi', description: "Food truck asymmetrical portland, YOLO cliche godard green juice vice kickstarter pinterest freegan. Readymade shabby chic flexitarian bespoke DIY, pinterest banjo four loko. Tattooed blog humblebrag bespoke. Tousled banh mi cornhole readymade, meggings kombucha franzen polaroid. Pickled mlkshk ramps portland. Trust fund gentrify cold-pressed, umami single-origin coffee crucifix leggings. Kitsch bespoke echo park normcore", image:require('../assets/dog-2.jpg')}
+];
+
 export default {
   data () {
     return {
@@ -18,7 +23,7 @@ export default {
       // preserves its current state and we are modifying
       // its initial state.
       msg: 'Hello! Here are the dogs',
-      dogs: [{name: 'Struppi', image: require('../assets/dog1.jpg')}, {name:'Lessi', image:require('../assets/dog-2.jpg')}]
+      dogs: dogs
     }
   }
 }
@@ -33,6 +38,7 @@ h1 {
 }
 ul {
   list-style: none;
+  display: flex;
 }
 .container {
   width: 80%;

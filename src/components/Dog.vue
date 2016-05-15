@@ -2,7 +2,7 @@
   <li class="dog">
     <h3>{{ dog.name }} </h3>
     <img :src="dog.image" />
-    <p class="clearfix">Ein lieber Hund</p>
+    <p>{{dog.description}}</p>
   </li>
 </template>
 
@@ -14,8 +14,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .dog {
+    display: inline;
+  }
   img{
-    float: left;
     width: 200px;
   }
   .clearfix::before,
