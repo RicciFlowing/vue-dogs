@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <h1>{{ msg }}</h1>
+    <div class="container">
       <li v-for="dog in dogs">
         <dog :dog="dog"> </dog>
       </li>
-
     </div>
   </div>
 </template>
@@ -27,5 +27,15 @@ export default {
 <style>
 body {
   font-family: Helvetica, sans-serif;
+}
+h1 {
+  text-align: center
+}
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 30px;
+  background-color: #D3D3D3;
+  border-radius: 5px;
 }
 </style>
