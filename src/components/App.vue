@@ -12,7 +12,10 @@
 <script>
 var dogs = [
   {name: 'Struppi', description: "Food truck asymmetrical portland, YOLO cliche godard green juice vice kickstarter pinterest freegan. Readymade shabby chic flexitarian bespoke DIY, pinterest banjo four loko. Tattooed blog humblebrag bespoke. Tousled banh mi cornhole readymade, meggings kombucha franzen polaroid. Pickled mlkshk ramps portland. Trust fund gentrify cold-pressed, umami single-origin coffee crucifix leggings. Kitsch bespoke echo park normcore", image: require('../assets/dog1.jpg')},
-  {name:'Lessi', description: "Food truck asymmetrical portland, YOLO cliche godard green juice vice kickstarter pinterest freegan. Readymade shabby chic flexitarian bespoke DIY, pinterest banjo four loko. Tattooed blog humblebrag bespoke. Tousled banh mi cornhole readymade, meggings kombucha franzen polaroid. Pickled mlkshk ramps portland. Trust fund gentrify cold-pressed, umami single-origin coffee crucifix leggings. Kitsch bespoke echo park normcore", image:require('../assets/dog-2.jpg')}
+  {name:'Lessi', description: "Food truck asymmetrical portland, YOLO cliche godard green juice vice kickstarter pinterest freegan. Readymade shabby chic flexitarian bespoke DIY, pinterest banjo four loko. Tattooed blog humblebrag bespoke. Tousled banh mi cornhole readymade, meggings kombucha franzen polaroid. Pickled mlkshk ramps portland. Trust fund gentrify cold-pressed, umami single-origin coffee crucifix leggings. Kitsch bespoke echo park normcore", image:require('../assets/dog-2.jpg')},
+  {name:'Kelvin', description: "Food truck asymmetrical portland, YOLO cliche godard green juice vice kickstarter pinterest freegan. Readymade shabby chic flexitarian bespoke DIY, pinterest banjo four loko. Tattooed blog humblebrag bespoke. Tousled banh mi cornhole readymade, meggings kombucha franzen polaroid. Pickled mlkshk ramps portland. Trust fund gentrify cold-pressed, umami single-origin coffee crucifix leggings. Kitsch bespoke echo park normcore", image:require('../assets/dog-2.jpg')},
+  {name:'Tore', description: "Food truck asymmetrical portland, YOLO cliche godard green juice vice kickstarter pinterest freegan. Readymade shabby chic flexitarian bespoke DIY, pinterest banjo four loko. Tattooed blog humblebrag bespoke. Tousled banh mi cornhole readymade, meggings kombucha franzen polaroid. Pickled mlkshk ramps portland. Trust fund gentrify cold-pressed, umami single-origin coffee crucifix leggings. Kitsch bespoke echo park normcore", image:require('../assets/dog-2.jpg')},
+
 ];
 
 export default {
@@ -31,7 +34,8 @@ export default {
 
 <style>
 body {
-  font-family: Helvetica, sans-serif;
+  @import url(https://fonts.googleapis.com/css?family=Crimson+Text);
+  font-family: 'Crimson Text', serif;
 }
 h1 {
   text-align: center
@@ -39,6 +43,8 @@ h1 {
 ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .container {
   width: 80%;
