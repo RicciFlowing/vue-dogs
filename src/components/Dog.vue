@@ -15,8 +15,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .dog {
-    padding: 20px;
+    margin: 15px;
     flex-basis: 400px;
+    flex-grow: 1;
     }
   h3 {
     @import url(https://fonts.googleapis.com/css?family=Dancing+Script);
