@@ -1,6 +1,6 @@
 <template>
   <li class="dog">
-    <h3>{{ dog.name }} </h3>
+    <h3>{{ dog.name }}  <span v-if="dog.beginner" class="badge"> beginner friendly </span></h3>
     <img :src="dog.image" />
     <p>{{dog.description}}</p>
   </li>
@@ -30,6 +30,12 @@ export default {
     margin-top: 0;
     margin-left: 0;
   }
+  .badge{
+    font-family: 'Crimson Text', serif;
+    float: right;
+    font-size: 1rem;
+  }
+
   .clearfix::before,
   .clearfix::after {
     content: " ";
