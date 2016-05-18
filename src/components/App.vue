@@ -33,6 +33,11 @@ export default {
 </script>
 
 <style>
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
 body {
   @import url(https://fonts.googleapis.com/css?family=Crimson+Text);
   font-family: 'Crimson Text', serif;
@@ -53,4 +58,26 @@ ul {
   background-color: #D3D3D3;
   border-radius: 5px;
 }
+
+@media (max-width: 800px) {
+  body {
+    width: 100%;
+  }
+  .container {
+    padding: 10px;
+    width: 90%;
+  }
+ }
+
+@media (max-width: 400px) {
+  body {
+    width: 100%;
+  }
+  .container {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 0px;
+  }
+ }
 </style>
