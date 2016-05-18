@@ -2,9 +2,7 @@
   <div id="app">
     <h1>{{ msg }}</h1>
     <div class="container">
-      <ul>
-        <dog v-for="dog in dogs" :dog="dog"> </dog>
-      </ul>
+      <dog-list :dogs="dogs"></dog-list>
     </div>
   </div>
 </template>
@@ -45,12 +43,7 @@ body {
 h1 {
   text-align: center
 }
-ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
+
 .container {
   width: 80%;
   margin: auto;
