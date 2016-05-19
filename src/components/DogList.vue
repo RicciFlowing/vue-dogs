@@ -1,6 +1,7 @@
 <template>
+  <input class="search-form"v-model="search">
   <ul>
-    <dog v-for="dog in dogs" :dog="dog"> </dog>
+    <dog v-for="dog in dogs| filterBy search" :dog="dog"> </dog>
   </ul>
 </template>
 
