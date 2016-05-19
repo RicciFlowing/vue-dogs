@@ -16,8 +16,9 @@ export default {
 .search-form{
   display: block;
   border: none;
+  border-radius: 2px;
   border-bottom: solid 1px;
-  height: 20px;
+  height: 30px;
   width: 200px;
   text-align: center;
   margin-left: auto;
