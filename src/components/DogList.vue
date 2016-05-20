@@ -1,7 +1,9 @@
 <template>
   <input class="search-form" v-model="search" placeholder="Search">
+  <input type="checkbox" id="checkbox" v-model="beginner">
+  <label for="checkbox"> beginner friendly</label>
   <ul>
-    <dog v-for="dog in dogs| filterBy search" :dog="dog"> </dog>
+    <dog v-for="dog in dogs| filterBy search | filterBy beginner||null in 'beginner'" :dog="dog"> </dog>
   </ul>
 </template>
 
