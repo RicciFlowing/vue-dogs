@@ -1,6 +1,10 @@
 <template>
   <li class="dog">
     <h3>{{ dog.name }}  <span v-if="dog.beginner" class="badge"> beginner friendly </span></h3>
+    <div>
+      Pinned <input type="checkbox" v-model="dog.pinned">
+    </div>
+
     <img :src="dog.image" />
     <p>{{dog.description}}</p>
   </li>
