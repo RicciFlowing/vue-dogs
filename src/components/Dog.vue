@@ -4,7 +4,6 @@
     <div>
       Pinned <input type="checkbox" v-model="dog.pinned">
     </div>
-
     <img :src="dog.image" />
     <p>{{dog.description}}</p>
   </li>
@@ -29,7 +28,9 @@ export default {
     font-size: 30px;
   }
   img{
-    width: 200px;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
     float: left;
     margin: 10px;
     margin-top: 0;
