@@ -9,11 +9,14 @@
 
 <script>
 var dogs = [
-  {name: 'Struppi', pinned: true, age: 1, beginner: true,  description: "Trust fund gentrify cold-pressed, umami single-origin coffee crucifix leggings. Kitsch bespoke echo park normcore", image: require('../assets/dog1.jpg')},
-  {name:'Lessi', pinned: false,age: 4, beginner: false, description: "Food truck asymmetrical portland, YOLO cliche godard green juice vice kickstarter pinterest freegan.", image:require('../assets/dog-2.jpg')},
-  {name:'Kelvin', pinned: false,age: 2, beginner: true, description: "Tattooed blog humblebrag bespoke. Tousled banh mi cornhole readymade, meggings kombucha franzen polaroid. Pickled mlkshk ramps portland. ", image:require('../assets/dog-2.jpg')},
-  {name:'Tore', pinned: false , age: 3, beginner: true, description: " Readymade shabby chic flexitarian bespoke DIY, pinterest banjo four loko. Tattooed blog humblebrag bespoke", image:require('../assets/dog-2.jpg')},
-
+  {name: 'Struppi', pinned: true, age: 1, beginner: true,
+   description: "Sweet little puppy ready to be cuddled.", image: require('../assets/dog1.jpg')},
+  {name:'Lessi', pinned: false,age: 4, beginner: false,
+   description: "Give home to a pair of two lovelable and agile friends.", image:require('../assets/dog-2.jpg')},
+  {name:'Kelvin', pinned: false,age: 2, beginner: false,
+   description: "Agile and ready for home near the water", image:require('../assets/dog_4.jpg')},
+  {name:'Kelvin', pinned: false,age: 2, beginner: true,
+   description: "A cozy friend. Been loyal to it master for long years.", image:require('../assets/dog_3.jpg')},
 ];
 
 export default {
