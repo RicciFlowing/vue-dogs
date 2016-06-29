@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>{{ msg }}</h1>
+    <h1> Dogs to be loved</h1>
     <div class="container">
       <dog-list :dogs="dogs"></dog-list>
     </div>
@@ -22,11 +22,6 @@ var dogs = [
 export default {
   data () {
     return {
-      // note: changing this line won't causes changes
-      // with hot-reload because the reloaded component
-      // preserves its current state and we are modifying
-      // its initial state.
-      msg: 'Hello! Here are the dogs',
       dogs: dogs
     }
   }
