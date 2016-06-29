@@ -14,6 +14,11 @@
 <script>
 export default {
   props: ['dogs'],
+  data() { return {
+      search: '',
+      beginner: false
+    }
+  }
 }
 </script>
 
