@@ -1,18 +1,18 @@
 <template>
   <li class="dog">
-    <h3>{{ dog.name }}  <span v-if="dog.beginner" class="badge"> beginner friendly </span></h3>
-
-    <div >
-
+    <div class="title clearfix">
+      <h3>{{ dog.name }} </h3>
       <div class="pin" v-on:click="toogle_pin">
-        <span v-if="dog.pinned" class="pin fa fa-thumb-tack"> </span>
-        <p v-else>
+        <p v-if="dog.pinned" class="pin fa fa-thumb-tack no-margin"> </p>
+        <p class="no-margin" v-else>
           Pin this dog
         </p>
       </div>
     </div>
+
     <img :src="dog.image" />
     <p>{{dog.description}}</p>
+    <p v-if="dog.beginner"> This dog is beginner friendly </p>
   </li>
 </template>
 
@@ -30,7 +30,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+  .title {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .pin {
+    display: inline;
+    float: right;
+  }
   .dog {
     margin: 30px;
     flex-basis: 400px;
@@ -41,6 +48,8 @@ export default {
     @import url(https://fonts.googleapis.com/css?family=Dancing+Script);
     font-family: 'Dancing Script', cursive;
     font-size: 30px;
+    width: 80;
+    display: inline;
   }
   img{
     border-radius: 50%;
@@ -55,6 +64,9 @@ export default {
     font-family: 'Crimson Text', serif;
     float: right;
     font-size: 1rem;
+  }
+  .no-margin{
+    margin: 0;
   }
 
   .clearfix::before,
