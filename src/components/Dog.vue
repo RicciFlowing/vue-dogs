@@ -22,7 +22,6 @@ export default {
   methods: {
     toogle_pin(){
       this.dog.pinned = !this.dog.pinned
-
     }
   }
 }
