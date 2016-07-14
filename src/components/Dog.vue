@@ -43,6 +43,14 @@ export default {
     flex-grow: 1;
     max-width: 30%;
     }
+
+  @media (max-width: 600px) {
+    .dog {
+      margin: 20px;
+      min-width: 300px;
+      }
+   }
+
   h3 {
     @import url(https://fonts.googleapis.com/css?family=Dancing+Script);
     font-family: 'Dancing Script', cursive;

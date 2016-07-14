@@ -29,7 +29,6 @@ export default {
   text-align: center;
 }
 
-
 .search-form{
   display: inline-block;
   border: none;
@@ -40,10 +39,20 @@ export default {
   text-align: center;
   margin-right: 20px;
 }
+
 ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+@media (max-width: 600px) {
+  ul {
+    width: 100%;
+    list-style: none;
+    justify-content: center;
+  }
+ }
+
 </style>

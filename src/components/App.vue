@@ -49,17 +49,8 @@ h1 {
   border-radius: 5px;
 }
 
-@media (max-width: 800px) {
-  body {
-    width: 100%;
-  }
-  .container {
-    padding: 10px;
-    width: 90%;
-  }
- }
 
-@media (max-width: 400px) {
+@media (max-width: 800px) {
   body {
     width: 100%;
   }
