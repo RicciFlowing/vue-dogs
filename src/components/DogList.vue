@@ -1,8 +1,10 @@
 <template>
   <div class="input-group">
     <input class="search-form" v-model="search" placeholder="Search">
-    <input type="checkbox" id="beginner-checkbox" v-model="beginner">
-    <label for="checkbox"> beginner friendly</label>
+    <div>
+      <input type="checkbox" id="beginner-checkbox" v-model="beginner">
+      <label for="checkbox"> beginner friendly</label>
+    </div>
   </div>
 
   <ul>
@@ -26,11 +28,15 @@ export default {
 <style scoped>
 
 .input-group {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
+
+
 .search-form{
-  display: inline-block;
+
   border: none;
   border-radius: 2px;
   border-bottom: solid 1px;
@@ -52,6 +58,11 @@ ul {
     width: 100%;
     list-style: none;
     justify-content: center;
+  }
+
+  .input-group {
+    flex-direction: column;
+    align-items: center;
   }
  }
 
