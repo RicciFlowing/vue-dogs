@@ -8,8 +8,8 @@
   </div>
 
   <ul>
-    <dog v-for="pet in pets| filterBy true in 'pinned'" :dog="dog"> </dog>
-    <dog v-for="pet in pets| filterBy false in 'pinned' | filterBy search | filterBy beginner||null in 'beginner'" :dog="dog"> </dog>
+    <pet v-for="pet in pets| filterBy true in 'pinned'" :pet="pet"> </pet>
+    <pet v-for="pet in pets| filterBy false in 'pinned' | filterBy search | filterBy beginner||null in 'beginner'" :pet="pet"> </pet>
   </ul>
 </template>
 

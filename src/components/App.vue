@@ -1,28 +1,28 @@
 <template>
   <div id="app">
-    <h1> Dogs to be loved</h1>
+    <h1> Pets to be loved</h1>
     <div class="container">
-      <dog-list :dogs="dogs"></dog-list>
+      <pet-list :pets="pets"></pet-list>
     </div>
   </div>
 </template>
 
 <script>
-var dogs = [
-  {name: 'Struppi', pinned: true, age: 1, beginner: true,
+var pets = [
+  {name: 'Struppi', pinned: true, age: 1, beginner: true, type: "dog",
    description: "Sweet little puppy ready to be cuddled.", image: require('../assets/dog1.jpg')},
-  {name:'Lessi', pinned: false,age: 4, beginner: false,
+  {name:'Lessi', pinned: false,age: 4, beginner: false, type: "dog",
    description: "Give home to a pair of two lovelable and agile friends.", image:require('../assets/dog-2.jpg')},
-  {name:'Kelvin', pinned: false,age: 2, beginner: false,
+  {name:'Kelvin', pinned: false,age: 2, beginner: false, type: "dog",
    description: "Agile and ready for home near the water", image:require('../assets/dog_4.jpg')},
-  {name:'Kelvin', pinned: false,age: 2, beginner: true,
+  {name:'Kelvin', pinned: false,age: 2, beginner: true, type: "dog",
    description: "A cozy friend. Been loyal to it master for long years.", image:require('../assets/dog_3.jpg')},
 ];
 
 export default {
   data () {
     return {
-      dogs: dogs
+      pets: pets
     }
   }
 }
