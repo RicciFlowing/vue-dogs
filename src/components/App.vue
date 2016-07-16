@@ -17,6 +17,8 @@ var pets = [
    description: "Agile and ready for home near the water", image:require('../assets/dog_4.jpg')},
   {name:'Kelvin', pinned: false,age: 2, beginner: true, type: "dog",
    description: "A cozy friend. Been loyal to it master for long years.", image:require('../assets/dog_3.jpg')},
+   {name:'Cozy', pinned: false,age: 1, beginner: false, type: "cat",
+    description: "Free and independet as a cat should be", image:require('../assets/cat_1.jpg')},
 ];
 
 export default {
