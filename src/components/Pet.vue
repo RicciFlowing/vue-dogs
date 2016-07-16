@@ -1,7 +1,7 @@
 <template>
   <li class="pet">
     <div class="title clearfix">
-      <h3>{{ pet.name }} - {{pet.type}} </h3>
+      <h3>{{ pet.name }}  </h3>
       <div class="pin" v-on:click="toogle_pin">
         <p v-if="pet.pinned" class="pin fa fa-thumb-tack no-margin"> </p>
         <p class="no-margin" v-else>
