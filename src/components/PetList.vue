@@ -5,11 +5,15 @@
       <input type="checkbox" id="beginner-checkbox" v-model="beginner">
       <label for="checkbox"> beginner friendly</label>
     </div>
+    <select class="type-select" v-model="type" multiple>
+      <option selected>dog</option>
+      <option selected>cat</option>
+    </select>
   </div>
 
   <ul>
     <pet v-for="pet in pets| filterBy true in 'pinned'" :pet="pet"> </pet>
-    <pet v-for="pet in pets| filterBy false in 'pinned' | filterBy search | filterBy beginner||null in 'beginner'" :pet="pet"> </pet>
+    <pet v-for="pet in pets| filterBy false in 'pinned' | filterBy search | filterBy beginner||null in 'beginner' | filterBy type||null in 'type'" :pet="pet"> </pet>
   </ul>
 </template>
 
@@ -33,10 +37,13 @@ export default {
   flex-wrap: wrap;
 }
 
-
+.type-select{
+  margin: 10px;
+  padding: 10px;
+}
 
 .search-form{
-
+  display: block;
   border: none;
   border-radius: 2px;
   border-bottom: solid 1px;
