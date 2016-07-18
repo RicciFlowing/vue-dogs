@@ -18,6 +18,11 @@
 </template>
 
 <script>
+// Vue.filter('type', function (pets, typeArray) {
+//   pets = pets.filter((pet)=> { pet.type})
+//   return begin + value + end
+// })
+
 export default {
   props: ['pets'],
   data() { return {
