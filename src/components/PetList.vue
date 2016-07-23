@@ -13,23 +13,20 @@
 
   <ul>
     <pet v-for="pet in pets| filterBy true in 'pinned'" :pet="pet"> </pet>
-    <pet v-for="pet in pets| filterBy false in 'pinned' | filterBy search | filterBy beginner||null in 'beginner' | filterBy type||null in 'type'" :pet="pet"> </pet>
+    <pet v-for="pet in pets| filterBy false in 'pinned' | filterBy search | filterBy beginner||null in 'beginner' | petType type" :pet="pet"> </pet>
   </ul>
 </template>
 
 <script>
-// Vue.filter('type', function (pets, typeArray) {
-//   pets = pets.filter((pet)=> { pet.type})
-//   return begin + value + end
-// })
 
 export default {
   props: ['pets'],
   data() { return {
       search: '',
-      beginner: false
+      beginner: false,
+      type: []
     }
-  }
+  },
 }
 </script>
 
