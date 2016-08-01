@@ -1,7 +1,7 @@
 <template>
   <div class="input-group">
-    <input class="search-form" v-model="search" placeholder="Search">
     <div>
+      <input class="search-form" v-model="search" placeholder="Search">
       <input type="checkbox" id="beginner-checkbox" v-model="beginner">
       <label for="checkbox"> beginner friendly</label>
     </div>
@@ -57,6 +57,7 @@ export default {
   width: 200px;
   text-align: center;
   margin-right: 20px;
+  margin-bottom: 15px;
 }
 
 ul {
