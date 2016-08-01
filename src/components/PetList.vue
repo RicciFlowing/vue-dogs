@@ -42,6 +42,10 @@ export default {
 .type-select{
   margin: 10px;
   padding: 10px;
+  margin-top: 0;
+  border: none;
+  border-radius: 3px;
+  width: 100px;
 }
 
 .search-form{
