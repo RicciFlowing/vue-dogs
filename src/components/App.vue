@@ -5,6 +5,10 @@
       <pet-list :pets="pets"></pet-list>
     </div>
   </div>
+<button id="show-modal" @click="toggleModal">Show Modal</button>
+  <modal :show.sync="showModal">
+  <h3 slot="header">custom header</h3>
+</modal>
 </template>
 
 <script>
@@ -24,8 +28,16 @@ var pets = [
 export default {
   data () {
     return {
-      pets: pets
+      pets: pets,
+      showModal: false
     }
+  },
+  methods: {
+    toggleModal(){
+      console.log(this.showModal);
+      this.showModal = !this.showModal
+    }
+
   }
 }
 </script>
